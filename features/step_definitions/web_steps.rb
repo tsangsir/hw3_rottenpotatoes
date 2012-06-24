@@ -53,7 +53,7 @@ When /^(?:|I )press "([^"]*)"$/ do |button|
   click_button(button)
 end
 
-When /^(?:|I )follow "([^"]*)"$/ do |link|
+When /^(?:|I |i )follow "([^"]*)"$/ do |link|
   click_link(link)
 end
 
@@ -252,3 +252,4 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
